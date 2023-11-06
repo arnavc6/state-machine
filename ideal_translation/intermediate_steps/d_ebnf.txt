@@ -1,0 +1,14 @@
+program ::= '#' transitions
+
+transitions ::= '[' transition_list ']'
+
+transition_list ::= transition
+                | transition_list ',' transition
+
+transition ::= state whitespace state whitespace action
+
+state ::= string_literal
+
+action ::= string_literal
+
+whitespace ::= ' ' | '\t' | '\n'

@@ -1,0 +1,89 @@
+{
+    "tokenStream": [
+        {
+            "type": "identifier",
+            "val": "transitions"
+        },
+        { 
+            "type": "equals"
+        },
+        {
+            "type": "leftSquareBracket"
+        },
+        {
+            "type": "string",
+            "val": "locked"
+        },
+        {
+            "type": "string",
+            "val": "turnKey"
+        },
+        {
+            "type": "string",
+            "val": "unlocked"
+        },
+        {
+            "type": "comma",
+        },
+        {
+            "type": "string",
+            "val": "unlocked"
+        },
+        {
+            "type": "string",
+            "val": "turnKey"
+        },
+        {
+            "type": "string",
+            "val": "locked"
+        },
+        {
+            "type": "comma",
+        },
+        {
+            "type": "string",
+            "val": "locked"
+        },
+        {
+            "type": "string",
+            "val": "break"
+        },
+        {
+            "type": "string",
+            "val": "broken"
+        },
+        {
+            "type": "comma",
+        },
+        {
+            "type": "string",
+            "val": "unlocked"
+        },
+        {
+            "type": "string",
+            "val": "break"
+        },
+        {
+            "type": "string",
+            "val": "broken"
+        },
+        {
+            "type": "comma",
+        },
+        {
+            "type": "string",
+            "val": "broken"
+        },
+        {
+            "type": "string",
+            "val": "fix"
+        },
+        {
+            "type": "string",
+            "val": "locked"
+        },
+        {
+            "type": "rightSquareBracket"
+        },
+    ]
+}

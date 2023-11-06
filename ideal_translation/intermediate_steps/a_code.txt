@@ -1,0 +1,10 @@
+// current_state = transitions{to: current_state, event: event_name}
+
+#transitions = [     
+    "locked"      "turnKey"        "unlocked",
+    "unlocked"    "turnKey"        "locked",
+    "locked"      "break"          "broken”,
+    "unlocked"    "break"          "broken”,
+    "broken"      "fix"            "locked"
+]
+

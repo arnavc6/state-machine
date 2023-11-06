@@ -1,0 +1,100 @@
+{
+    "parsetree": [
+        {
+            "type": "assignment"
+            "val": {
+                "leftside": "transitions",
+                "rightside": {
+                    "type": "table"
+                    "val": [
+                        {
+                            "type": "vector",
+                            "val": [
+                                {
+                                    "type": "string",
+                                    "val": "locked"
+                                },
+                                {
+                                    "type": "string",
+                                    "val": "turnKey"
+                                },
+                                {
+                                    "type": "string",
+                                    "val": "unlocked"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "vector",
+                            "val": [
+                                {
+                                    "type": "string",
+                                    "val": "unlocked"
+                                },
+                                {
+                                    "type": "string",
+                                    "val": "turnKey"
+                                },
+                                {
+                                    "type": "string",
+                                    "val": "locked"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "vector",
+                            "val": [
+                                {
+                                    "type": "string",
+                                    "val": "locked"
+                                },
+                                {
+                                    "type": "string",
+                                    "val": "break"
+                                },
+                                {
+                                    "type": "string",
+                                    "val": "broken"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "vector",
+                            "val": [
+                                {
+                                    "type": "string",
+                                    "val": "unlocked"
+                                },
+                                {
+                                    "type": "string",
+                                    "val": "break"
+                                },
+                                {
+                                    "type": "string",
+                                    "val": "broken"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "vector",
+                            "val": [
+                                {
+                                    "type": "string",
+                                    "val": "broken"
+                                },
+                                {
+                                    "type": "string",
+                                    "val": "fix"
+                                },
+                                {
+                                    "type": "string",
+                                    "val": "locked"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
