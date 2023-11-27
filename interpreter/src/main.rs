@@ -1,6 +1,8 @@
 use std::path::Path;
 use std::fs::File;
 use std::io::Read;
+use std::collections::HashMap;
+
 
 #[derive(Debug)]
 #[derive(PartialEq)]
@@ -109,6 +111,16 @@ fn parse(token_stream: Vec<Token>) -> Vec<Node> {
     parse_tree
 }
 
+#[derive(Debug)]
+enum Type{
+    TableType(Vec<Vec<String>>)
+}
+fn evaluate(node: Node, symbol_table: &mut HashMap<String, Type>){
+    match node{
+        Node::Assignment(key, value) => symbol_table.insert(key.as_str().to_string(), Type::TableType(value)),
+    };
+}
+
 fn main() {
     let in_path = Path::new("./files/a_code.txt");
     let in_display = in_path.display();
@@ -124,7 +136,11 @@ fn main() {
         Ok(_) => {
             let ts = lex(s.as_str());
             let pt = parse(ts);
-            println!("{:?}", pt)
+            let mut symbol_table: HashMap<String, Type> = HashMap::new();
+            for node in pt{
+                evaluate(node, &mut symbol_table);
+            }
+            println!("{:?}", symbol_table);
         }
     }
 }

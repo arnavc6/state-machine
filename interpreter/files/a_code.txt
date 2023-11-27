@@ -1,4 +1,4 @@
-#transitions = [
+transitions = [
     "locked"      "turnKey"        "unlocked",
     "unlocked"    "turnKey"        "locked",
     "locked"      "break"          "broken",
